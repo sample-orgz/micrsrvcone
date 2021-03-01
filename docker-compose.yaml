@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+
+  micrsrvcone:
+    image: micrsrvcone
+    networks:
+      - ynap
+    ports:
+      - 80:8080
+    environment:
+      - spring.profiles.active=development
+    depends_on: 
+      - msdatabase
+      
+  msdatabase:
+    image: mysql:8.0
+    networks:
+      - ynap
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=ynapDB
+
+networks:
+  ynap:
+    driver: bridge
+    name: ynap

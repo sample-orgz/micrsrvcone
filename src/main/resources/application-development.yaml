@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: micrsrvcone
+#  datasource:
+#    url: jdbc:mysql://msdatabase:3306/ynapDB
+#    username: root
+#    password: password
+#    driverClassName: com.mysql.jdbc.Driver
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        auto_quote_keyword: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+app:  
+  application:
+    environment: dev
+
+sample:
+  property:
+    name: sample-development-value
+elasticsearch:
+  host:
+    name: elasticsearch 
+  port: 9200
+  index:
+    prefix: dev 

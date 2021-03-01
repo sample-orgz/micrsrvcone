@@ -1,0 +1,13 @@
+.DS_Store
+.classpath
+*.gradle
+gradle/
+.gradle/
+gradlew
+.settings
+.project
+HELP.md
+bin/
+build/
+*.jar
+*.bat
