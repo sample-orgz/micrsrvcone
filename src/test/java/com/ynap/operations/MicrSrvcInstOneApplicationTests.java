@@ -9,8 +9,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 class MicrSrvcInstOneApplicationTests {
 
-	@Test
+	/*@Test
 	void contextLoads() {
+	}*/
+	@Test
+	public void test() {
+		System.out.println("run test cases");
 	}
-
+	
+	@Test
+	public void loadTest() {
+		System.out.println("run test cases-2");
+	}
+	
 }

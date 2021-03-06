@@ -1,6 +1,6 @@
 spring:
-#  application:
-#    name: micrsrvcone
+  application:
+    name: micrsrvcone
 #  datasource:
 #    url: jdbc:mysql://msdatabase:3306/ynapDB
 #    username: root
@@ -27,7 +27,7 @@ sample:
     name: sample-value
 elasticsearch:
   host:
-    name: localhost 
+    name: localhost
   port: 9200
   index:
-    prefix: local 
+    prefix: local

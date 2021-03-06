@@ -26,7 +26,7 @@ sample:
     name: sample-development-value
 elasticsearch:
   host:
-    name: elasticsearch 
+    name: elasticsearch.elastic.svc.cluster.local
   port: 9200
   index:
-    prefix: dev 
+    prefix: dev
