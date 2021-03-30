@@ -8,8 +8,6 @@ services:
       - ynap
     ports:
       - 80:8080
-      - 80:8090
-      - 80:8070
     environment:
       - spring.profiles.active=development
     depends_on: 
